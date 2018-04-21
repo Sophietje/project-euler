@@ -1,6 +1,7 @@
-import java.io.*;
-import java.net.URL;
-import java.nio.file.Paths;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * In a given 20x20 grid, find four adjacent numbers
@@ -84,7 +85,7 @@ public class Problem11 {
             boolean initialized = false;
             String line;
             int i = -1;
-            BufferedReader r = new BufferedReader(new InputStreamReader(Problem11.class.getResourceAsStream("grid.txt")));
+            BufferedReader r = new BufferedReader(new InputStreamReader(Problem11.class.getResourceAsStream("problem11-grid.txt")));
             while ((line = r.readLine()) != null) {
                 i++;
                 String[] strNums = line.split(" ");
