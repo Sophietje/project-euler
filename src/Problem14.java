@@ -38,6 +38,7 @@ public class Problem14 {
     }
 
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
         // Numbers 13 and 10 from given example
         long[] res = {13, 10};
         int num = 0;
@@ -50,5 +51,7 @@ public class Problem14 {
             }
         }
         System.out.println("Final result: "+ Arrays.toString(res));
+        long end = System.currentTimeMillis();
+        System.out.println("Calculation took "+(end-start)+" ms");
     }
 }
